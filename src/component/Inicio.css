@@ -1,0 +1,202 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #5b8f60;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header .banner h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+header .user-dropdown {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .user_logo {
+    width: 40px;
+    border-radius: 50%;
+}
+
+header .user-dropdown button:hover {
+    background-color: transparent; /* Elimina el cambio de color */
+}
+
+/* Buscador */
+main .buscador {
+    margin: 20px auto;
+    text-align: center;
+}
+
+main .buscador input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+main .buscador button:hover {
+    background-color: #357ab7;
+}
+main.buscar {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #555;
+}
+
+
+/* Botón descartar cambios */
+main .descartar-cambios {
+    text-align: center;
+    margin-top: 10px;
+}
+
+main .descartar-cambios button {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .descartar-cambios button:hover {
+    background-color: #c0392b;
+}
+
+/* Botón agregar publicación */
+main .agregarpublicacion {
+    text-align: center;
+    margin: 20px 0;
+}
+
+main .agregarpublicacion button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .agregarpublicacion button:hover {
+    background-color: #27ae60;
+}
+
+/* Publicaciones */
+main .publicaciones ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+}
+
+main .publicaciones ul li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main .publicaciones ul li h3 {
+    margin: 0;
+    color: #4a90e2;
+}
+
+main .publicaciones ul li p {
+    margin: 5px 0;
+    color: #555;
+}
+
+main .publicaciones ul li a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+main .publicaciones ul li a:hover {
+    color: #357ab7;
+}
+
+/* Mensaje de no resultados */
+main .publicaciones .no-resultados p {
+    text-align: center;
+    color: #e74c3c;
+}
+
+/* Estilo para ocultar inicialmente el visor PDF */
+.pdf-visor {
+    display: none; /* Inicialmente oculto */
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Estilo para mostrar el visor PDF cuando se activa */
+.pdf-visor.show {
+    display: block; /* Mostrar el visor cuando se hace clic */
+}
+
+/* Botón de abrir PDF */
+.open-pdf-btn {
+    background-color: #357ab7;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.open-pdf-btn:hover {
+    background-color: #2c6fa4;
+}
+
+/* Pie de página */
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

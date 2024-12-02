@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(40, 41, 43, 0.1);
+    background-color: #dbf3df;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.login-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100px;
+    height: auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+    margin: auto;
+    background-color: #5b8f60;
+    border: none;
+    color: #f0eeee;
+    cursor: pointer;
+}
+
+.input-link {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.container p {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #1b461b;
+}
+
+.error {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin-top: 5px;
+}
